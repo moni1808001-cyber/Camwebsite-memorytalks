@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: #FAF8F5;
+    color: #2A2522;
+  }
+
+  /* Custom gold scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF8F5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #DFC8B3;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C8A238;
+  }
+}
+
+/* Elegant gold gradients and text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #B08827 0%, #E7CE86 50%, #B08827 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-subtle {
+  background: linear-gradient(135deg, #8C671E 0%, #C8A238 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #C8A238 0%, #E7CE86 50%, #B08827 100%);
+}
+
+.bg-gold-subtle {
+  background: linear-gradient(135deg, #FAF2DE 0%, #F3E4B8 100%);
+}
+
+.border-gold-gradient {
+  border-image: linear-gradient(to right, #FAF2DE, #C8A238, #FAF2DE) 1;
+}
+
+.frosted-glass {
+  background: rgba(250, 248, 245, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.frosted-glass-dark {
+  background: rgba(26, 24, 23, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
